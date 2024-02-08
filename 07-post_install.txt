@@ -1,0 +1,20 @@
+# OS Prober
+
+sudo vim /etc/default/grub (Grub config file location)
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+# ÁRVA CSOMAGOK TÖRLÉSE
+
+sudo pacman -Rns $(pacman -Qtdq)
+
+# SWAP FILE (EXT4)
+
+cd /
+sudo dd if=/dev/zero of=/swapfile count=16384 bs=1MiB
+sudo chmod 600 swapfile
+sudo mkswap swapfile
+sudo swapon swapfile
+
+#FSTAB-ba beírni /etc/fstab
+
+/swapfile        none        swap        defaults      0 0

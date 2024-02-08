@@ -1,0 +1,10 @@
+### PARU AUR Helper telepítése
+
+sudo vim /etc/pacman.conf
+
+# Misc options
+Color (hashtaget kivenni)
+
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
