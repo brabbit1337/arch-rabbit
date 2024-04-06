@@ -89,8 +89,6 @@ sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed conky
 sudo mkdir /home/$USER/.config/conky
 sudo cp conky.conf /home/$USER/.config/conky
-sudo pacman -S --noconfirm --needed jellyfin-server
-sudo pacman -S --noconfirm --needed jellyfin-web
 sudo pacman -S --noconfirm --needed lm_sensors
 sudo pacman -S --noconfirm --needed hddtemp
 sudo pacman -S --noconfirm --needed curl
