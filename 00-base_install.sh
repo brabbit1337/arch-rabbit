@@ -32,7 +32,7 @@ else
 fi
 
 # KERNEL HEADERS
-sudo pacman -S --noconfirm --needed linux-zen-headers
+sudo pacman -S --noconfirm --needed linux-headers
 
 # BLUETOOTH
 sudo pacman -S --noconfirm --needed bluez
@@ -66,7 +66,6 @@ sudo sed -i 's/'#AutoEnable=false'/'AutoEnable=true'/g' /etc/bluetooth/main.conf
 #echo "################################################################"
 
 # BASE PROGRAMS
-sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed neofetch
 sudo pacman -S --noconfirm --needed gnome-disk-utility
 sudo pacman -S --noconfirm --needed pcmanfm
@@ -94,7 +93,6 @@ sudo pacman -S --noconfirm --needed hddtemp
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 xdg-user-dirs-update
-sudo pacman -S --noconfirm --needed qbittorrent
 sudo pacman -S --noconfirm --needed alacritty
 sudo pacman -S --noconfirm --needed lutris
 sudo pacman -S --noconfirm --needed flameshot
@@ -129,7 +127,7 @@ sudo pacman -S amd-ucode --noconfirm
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 # NVIDIA
-sudo pacman -S --noconfirm --needed nvidia-dkms nvidia-utils nvidia-settings
+sudo pacman -S --noconfirm --needed nvidia nvidia-utils nvidia-settings
 
 # NVIDIA 32 bit libs + LIBS for STEAM
 sudo pacman -S --noconfirm --needed lib32-libvdpau
@@ -147,12 +145,12 @@ sudo cp blacklist-nouveau.conf /etc/modprobe.d/
 sudo cp nouveau-kms.conf /etc/modprobe.d/
 
 # STEAM
-sudo pacman -S --noconfirm --needed steam
-sudo chmod +x update-proton-ge
-./update-proton-ge
+#sudo pacman -S --noconfirm --needed steam
+#sudo chmod +x update-proton-ge
+#./update-proton-ge
 
 # STEAM DOWNLOAD FIX
-sudo cp steam_dev.cfg /.local/share/Steam/
+#sudo cp steam_dev.cfg /.local/share/Steam/
 
 # XORG SETUP
 sudo cp -a xorg.conf.d /etc/X11/
