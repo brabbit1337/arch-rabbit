@@ -2,7 +2,6 @@
 set -e
 
 paru -S --noconfirm --needed noto-fonts-cjk
-paru -S --noconfirm --needed oversteer
 paru -S --noconfirm --needed xone-dkms
 paru -S --noconfirm --needed protontricks
 paru -S --noconfirm --needed dxvk-bin
