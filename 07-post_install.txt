@@ -3,9 +3,11 @@
 sudo vim /etc/default/grub (Grub config file location)
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
+
 # ÁRVA CSOMAGOK TÖRLÉSE
 
 sudo pacman -Rns $(pacman -Qtdq)
+
 
 # SWAP FILE (EXT4)
 
@@ -18,3 +20,8 @@ sudo swapon swapfile
 #FSTAB-ba beírni /etc/fstab
 
 /swapfile        none        swap        defaults      0 0
+
+
+# GNOME CENTER WINDOWS OPEN
+
+gsettings set org.gnome.mutter center-new-windows true
