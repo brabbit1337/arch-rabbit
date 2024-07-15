@@ -25,3 +25,7 @@ sudo swapon swapfile
 # GNOME CENTER WINDOWS OPEN
 
 gsettings set org.gnome.mutter center-new-windows true
+
+#Erik Dubois PGP Key
+sudo pacman-key --recv-keys 74F5DE85A506BF64
+sudo pacman-key --lsign-key 74F5DE85A506BF64
