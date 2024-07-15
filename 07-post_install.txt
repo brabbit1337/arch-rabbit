@@ -26,6 +26,27 @@ sudo swapon swapfile
 
 gsettings set org.gnome.mutter center-new-windows true
 
-#Erik Dubois PGP Key
+
+# Arco Linux Repo
+
+#[arcolinux_repo_testing]
+#SigLevel = Required DatabaseOptional
+#Include = /etc/pacman.d/arcolinux-mirrorlist
+ 
+[arcolinux_repo]
+SigLevel = Required DatabaseNever
+Include = /etc/pacman.d/arcolinux-mirrorlist
+ 
+[arcolinux_repo_3party]
+SigLevel = Required DatabaseNever
+Include = /etc/pacman.d/arcolinux-mirrorlist
+
+[arcolinux_repo_xlarge]
+SigLevel = Required DatabaseNever
+Include = /etc/pacman.d/arcolinux-mirrorlist
+
+
+# Erik Dubois PGP Key
+
 sudo pacman-key --recv-keys 74F5DE85A506BF64
 sudo pacman-key --lsign-key 74F5DE85A506BF64
