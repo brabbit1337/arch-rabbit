@@ -7,5 +7,4 @@ paru -S --noconfirm --needed protontricks
 paru -S --noconfirm --needed dxvk-bin
 paru -S --noconfirm --needed vesktop-bin
 paru -S --noconfitm --needed freetube-bin
-paru -S --noconfitm --needed candy-icons
-paru -S --noconfitm --needed dracula-gtk-theme
+paru -S --noconfirm --needed flat-remix
